@@ -16,37 +16,79 @@
         <!-- Edit code below this line -->
 
 
-        <form action="./results.html" method="post"> <!-- form setting either get or post -->
+        <form action="./results.html" method="get"> <!-- form setting either get or post -->
 
             <ul>
+
+                <!-- first name -->
                 <li>
-                    <label for="firstname"> First Name </label>
-                    <input type="text">
+                    <div>
+                        <label for="firstname"> First Name: </label>
+                    </div>
+                    <input name="firstname" type="text" placeholder="John" id="firstname" required>
                 </li>
+
+                <!-- last name -->
                 <li>
-                    <label for="lastname"> Last Name </label>
-                    <input type="text">
+                    <div>
+                        <label for="lastname"> Last Name: </label>
+                    </div>
+                    <input name="lastname" type="text" placeholder="Doe" id="lastname" required>
                 </li>
+
+                <!-- email address -->
                 <li>
-                    <label for="email">Email Address</label>
-                    <input type="text">
+                    <div>
+                        <label for="email">Email Address:</label>
+                    </div>
+                    <input name="email" type="text" placeholder="john.doe@gmail.com" id="emailaddress" required>
                 </li>
+
+                <!-- phone number -->
                 <li>
-                    <label for="phone">Phone Number</label>
-                    <input type="text">
+                    <div>
+                     <label for="phone">Phone Number:</label>
+                    </div>
+                    <input name="telephone" type="tel" placeholder="0000000000" id="phonenumber" required>
                 </li>
+
+                <!-- what do you need assistance with -->
+
+                <li>
+                    <label for="problem">What do you need help with?</label>
+                    <select name="problem" id="problem">
+                        <option value="error"> Experiencing error 404</option>
+                        <option value="consultation"> Talk to a human </option>
+                        <option value="bills"> Pay bills </option>
+                        <option value="other"> Other </option>
+                        <option value="account">Access old account</option>
+                    </select>
+                </li>
+
+                <!-- your message -->
+                <li>
+                    <div>
+                        <label for="text">Explain your issue:</label>
+                    </div>
+                    <textarea name="message" id="yourmessage" cols="64" rows="10"></textarea>
+                </li>
+
+                <!-- preferred contact method -->
+                <li> Preferred Contact Method:</li>
                 <li>
                     <label for="call">Call</label>
-                    <input type="text">
+                    <input type="checkbox" name="call" id="call">
                 </li>
                 <li> 
                     <label for="text">Text</label>
-                    <input type="text">
+                    <input type="checkbox" name="text" id="text">
                 </li>
                 <li>
-                    <label for="Email">Email</label>
-                    <input type="text">
+                    <label for="email">Email</label>
+                    <input type="checkbox" name="email" id="email">
                 </li>
+
+                <button> Submit </button>
             </ul>
         </form>
 

@@ -8,6 +8,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #f1f1f1;
     color: #333333;
+    background-color: aliceblue;
 }
 
 header, main, footer {
@@ -17,4 +18,53 @@ header, main, footer {
 
 header, footer {
     text-align: center;
+}
+
+/* form edits */
+form {
+    background-color: rgb(169, 192, 192);
+}
+
+input {
+    color: #333333;
+}
+
+/* edit input lengths */
+#firstname {
+    width: 250px;
+    height: 30px;
+}
+
+#lastname {
+    width: 250px;
+    height: 30px;
+}
+
+#emailaddress, #phonenumber {
+    width: 533px;
+    height: 30px;
+}
+
+ /* edit list */
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* flex */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+
+/* button edits */
+
+button {
+    padding: 1rem;
+    width: 300px;
+    background-color: aliceblue;
 }
